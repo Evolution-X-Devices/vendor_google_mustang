@@ -1,5 +1,5 @@
 {
-    "Include": ["thermal_info_config_throttling.json", "thermal_info_config_charge.json", "thermal_info_config_stats.json"],
+    "Include": ["thermal_info_config_throttling.json", "thermal_info_config_charge.json", "thermal_info_config_stats.json", "thermal_info_config_earlywarnings.json"],
     "Sensors":[
         {
             "Name": "VIRTUAL-SKIN-PREDICTION-MODEL",

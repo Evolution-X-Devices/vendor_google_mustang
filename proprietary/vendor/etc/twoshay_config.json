@@ -14,9 +14,14 @@
 					"blocked_by": ["segmentation"]
 				},
 				{
+					"class": "CoordstateAlgorithm",
+					"name": "coordstate",
+					"blocked_by": ["touchflow"]
+				},
+				{
 					"class": "PeakTrackerAlgorithm",
 					"name": "peak_tracker",
-					"blocked_by": ["touchflow"]
+					"blocked_by": ["coordstate"]
 				},
 				{
 					"class": "GripSuppressionAlgorithm",
@@ -88,9 +93,14 @@
 					}
 				},
 				{
+					"class": "GestureAlgorithm",
+					"name": "gesture",
+					"blocked_by": ["sensorfusion"],
+				},
+				{
 					"class": "TouchSuezAlgorithm",
 					"name": "touchsuez",
-					"blocked_by": ["sensorfusion"],
+					"blocked_by": ["gesture"],
 					"parameters": {
 						"latency_logger_threshold_ms": 4.1
 					}

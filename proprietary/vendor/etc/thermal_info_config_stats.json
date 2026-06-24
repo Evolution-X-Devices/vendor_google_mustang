@@ -15,7 +15,7 @@
             "VirtualSensor": true,
             "Formula": "PREVIOUSLY_PREDICTED",
             "Combination": ["VIRTUAL-SKIN-PREDICTION-MODEL"],
-            "PredictionDuration": 30000,
+            "PredictionDuration": -30000,
             "Multiplier": 0.001
         },
         {
@@ -24,7 +24,7 @@
             "VirtualSensor": true,
             "Formula": "PREVIOUSLY_PREDICTED",
             "Combination": ["VIRTUAL-SKIN-PREDICTION-MODEL"],
-            "PredictionDuration": 60000,
+            "PredictionDuration": -60000,
             "Multiplier": 0.001
         },
         {
@@ -241,7 +241,7 @@
                 "Stuck": {
                     "Configs": [
                         {
-                            "Monitor":  ["VIRTUAL-SKIN"],
+                            "Monitor":  ["VIRTUAL-SKIN-MODEL"],
                             "TempStuck": {
                                 "MinPollingCount": 8,
                                 "MinStuckDuration": 120000

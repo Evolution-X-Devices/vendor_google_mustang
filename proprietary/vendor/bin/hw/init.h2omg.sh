@@ -1,4 +1,4 @@
-#!/system/bin/sh
+#!/vendor/bin/sh
 
 # Enable the water intrusion detection fuse as needed
 
